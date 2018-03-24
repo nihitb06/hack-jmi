@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/navbar_header_height">
+
+    <ImageView
+        android:id="@+id/userProfilePicture"
+        android:src="@drawable/ic_account_circle_black_24dp"
+        android:tint="@android:color/background_light"
+        android:layout_marginStart="@dimen/padding_margin_default"
+        android:layout_marginEnd="@dimen/padding_margin_default"
+        android:layout_width="@dimen/height_list_avatar"
+        android:layout_height="@dimen/height_list_avatar"
+        android:layout_centerVertical="true"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:text="User Name"
+        android:textSize="@dimen/size_text_heading"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="@dimen/padding_margin_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/userProfilePicture" />
+
+    <TextView
+        android:id="@+id/userBloodType"
+        android:text="B+"
+        android:textSize="@dimen/size_text_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/userProfilePicture"
+        android:layout_alignBottom="@id/userProfilePicture" />
+
+</RelativeLayout>
