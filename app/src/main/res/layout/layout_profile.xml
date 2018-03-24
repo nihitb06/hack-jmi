@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="218dp">
+
+        <ImageView
+            android:id="@+id/profilePhoto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_account_circle_black_24dp"
+            android:foreground="@drawable/scrim_layout" />
+
+        <TextView
+            android:id="@+id/userName"
+            android:textSize="24sp"
+            android:textColor="@android:color/white"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="@dimen/padding_margin_default"
+            android:layout_marginEnd="@dimen/padding_margin_default"
+            android:layout_marginBottom="@dimen/padding_margin_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+
+
+
+    <ImageView
+        android:id="@+id/btn_edit"
+        android:src="@drawable/ic_mode_edit_white_24dp"
+        android:layout_gravity="end"
+        android:layout_margin="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/AppTheme.ClickableViewBorderless" />
+
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="218dp"
+            android:paddingTop="@dimen/padding_top_list"
+            android:paddingStart="@dimen/padding_img_start"
+            android:paddingEnd="@dimen/padding_end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_list_default">
+
+                <ImageView
+                    android:id="@+id/phoneOrMail"
+                    android:src="@drawable/ic_phone_black_24dp"
+                    android:paddingStart="@dimen/padding_img_start"
+                    android:paddingEnd="0dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="@dimen/size_img"
+                    android:layout_height="@dimen/size_img" />
+
+                <TextView
+                    android:id="@+id/phoneMailTableCell"
+                    android:textSize="@dimen/size_text"
+                    android:textColor="#212121"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/padding_text_start"
+                    android:paddingEnd="@dimen/padding_end"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </FrameLayout>
+
+            <View
+                android:background="#BDBDBD"
+                android:layout_marginStart="@dimen/padding_img_start"
+                android:layout_marginEnd="@dimen/padding_end"
+                android:layout_marginTop="@dimen/padding_top_list"
+                android:layout_marginBottom="@dimen/padding_top_list"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <FrameLayout
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_list_item">
+
+                <ImageView
+                    android:src="@drawable/ic_person_black_24dp"
+                    android:paddingStart="@dimen/padding_img_start"
+                    android:paddingEnd="0dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="@dimen/size_img"
+                    android:layout_height="@dimen/size_img" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/padding_text_start"
+                    android:paddingEnd="@dimen/padding_end"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:textSize="@dimen/size_text"
+                        android:textColor="#212121"
+                        android:gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/userTypeTableCell"
+                        android:textSize="@dimen/size_text"
+                        android:textColor="#757575"
+                        android:gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+
+
+            </FrameLayout>
+
+            <View
+                android:background="#BDBDBD"
+                android:layout_marginStart="@dimen/padding_img_start"
+                android:layout_marginEnd="@dimen/padding_end"
+                android:layout_marginTop="@dimen/padding_top_list"
+                android:layout_marginBottom="@dimen/padding_top_list"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_power_settings_new_black_24dp"
+        android:tint="#FFFFFF"
+        app:layout_anchor="@id/profilePhoto"
+        app:layout_anchorGravity="bottom|end" />
+
+</android.support.design.widget.CoordinatorLayout>

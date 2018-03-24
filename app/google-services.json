@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "902287839851",
+    "firebase_url": "https://hack-jmi-d5a48.firebaseio.com",
+    "project_id": "hack-jmi-d5a48",
+    "storage_bucket": "hack-jmi-d5a48.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:902287839851:android:45736b5529de4d8a",
+        "android_client_info": {
+          "package_name": "team7.hack.com.hackjmiapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "902287839851-baaferraqmm22ae9snnbfvob7000mdrp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "team7.hack.com.hackjmiapplication",
+            "certificate_hash": "b37a6b56a7f437bb1b398bb1909d5c53797db027"
+          }
+        },
+        {
+          "client_id": "902287839851-fqr9qqk6t2o6h68du7j8h9d6n449m6di.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "team7.hack.com.hackjmiapplication",
+            "certificate_hash": "4220cd3d5d574885a0dbcae0cda0d0ae44c5bb0f"
+          }
+        },
+        {
+          "client_id": "902287839851-6vhlf64v64nu9vp2d5uqthi437b6f7qg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4kELWHK3lKwSN8zzydj0u5nRq6uW7OVQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "902287839851-6vhlf64v64nu9vp2d5uqthi437b6f7qg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

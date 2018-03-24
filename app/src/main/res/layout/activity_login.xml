@@ -7,154 +7,175 @@
     android:orientation="vertical"
     tools:context="team7.hack.com.hackjmiapplication.LoginActivity">
 
-    <ImageView
-        android:src="@mipmap/ic_launcher_round"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="@dimen/padding_margin_xl"
-        android:layout_width="@dimen/logo_size"
-        android:layout_height="@dimen/logo_size"
-        tools:ignore="ContentDescription" />
-
-    <LinearLayout
-        android:id="@+id/login"
-        android:orientation="vertical"
-        android:layout_gravity="bottom"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <EditText
-            android:id="@+id/phoneNumber"
-            android:hint="Phone Number"
-            android:inputType="phone"
+        <ImageView
+            android:src="@mipmap/ic_launcher_round"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="@dimen/padding_margin_large"
-            android:layout_marginStart="@dimen/padding_margin_default"
-            android:layout_marginEnd="@dimen/padding_margin_default"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <com.roger.psdloadingview.library.PsdLoadingView
-            android:id="@+id/password"
-            android:hint="Password"
-            android:layout_margin="@dimen/padding_margin_default"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <Button
-            android:id="@+id/buttonLogin"
-            android:text="Login"
-            android:layout_marginStart="@dimen/padding_margin_default"
-            android:layout_marginEnd="@dimen/padding_margin_default"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            style="@style/Base.Widget.AppCompat.Button.Colored" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/signUp"
-        android:orientation="vertical"
-        android:layout_gravity="bottom"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:visibility="gone">
-
-        <android.support.design.widget.TextInputLayout
-            android:layout_margin="@dimen/padding_margin_default"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp">
-
-            <android.support.design.widget.TextInputEditText
-                android:id="@+id/userName"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Full Name"
-                android:inputType="phone"
-                android:paddingBottom="8dp"
-                android:textSize="16sp" />
-
-        </android.support.design.widget.TextInputLayout>
-
-        <android.support.design.widget.TextInputLayout
-            android:layout_margin="@dimen/padding_margin_default"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp">
-
-            <android.support.design.widget.TextInputEditText
-                android:id="@+id/phone"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Phone Number"
-                android:inputType="phone"
-                android:paddingBottom="8dp"
-                android:textSize="16sp" />
-
-        </android.support.design.widget.TextInputLayout>
+            android:layout_marginTop="@dimen/padding_margin_xl"
+            android:layout_width="@dimen/logo_size"
+            android:layout_height="@dimen/logo_size"
+            tools:ignore="ContentDescription" />
 
         <LinearLayout
-            android:layout_margin="@dimen/padding_margin_default"
+            android:id="@+id/login"
+            android:orientation="vertical"
+            android:layout_gravity="bottom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <TextView
-                android:text="Date of Birth:"
-                android:textColor="#212121"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:id="@+id/dob"
-                android:layout_marginStart="@dimen/padding_margin_xs"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-            <ImageView
-                android:id="@+id/datePick"
-                android:src="@drawable/ic_date_range_black_24dp"
+            <EditText
+                android:id="@+id/phoneNumber"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/padding_margin_large"
                 android:layout_marginStart="@dimen/padding_margin_default"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                style="@style/AppTheme.ClickableViewBorderless" />
+                android:layout_marginEnd="@dimen/padding_margin_default"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.roger.psdloadingview.library.PsdLoadingView
+                android:id="@+id/password"
+                android:hint="Password"
+                android:layout_margin="@dimen/padding_margin_default"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/buttonLogin"
+                android:text="Login"
+                android:layout_marginStart="@dimen/padding_margin_default"
+                android:layout_marginEnd="@dimen/padding_margin_default"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Base.Widget.AppCompat.Button.Colored" />
 
         </LinearLayout>
 
-        <android.support.design.widget.TextInputLayout
-            android:layout_margin="@dimen/padding_margin_default"
+        <LinearLayout
+            android:id="@+id/signUp"
+            android:orientation="vertical"
+            android:layout_gravity="bottom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp">
+            android:visibility="gone">
 
-            <android.support.design.widget.TextInputEditText
-                android:id="@+id/bloodGroup"
+            <android.support.design.widget.TextInputLayout
+                android:layout_margin="@dimen/padding_margin_default"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Blood Group"
-                android:paddingBottom="8dp"
-                android:textSize="16sp" />
+                android:layout_marginTop="16dp">
 
-        </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/userName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Full Name"
+                    android:inputType="phone"
+                    android:paddingBottom="8dp"
+                    android:textSize="16sp" />
 
-        <Button
-            android:id="@+id/buttonSignUp"
-            android:text="Sign Up"
-            android:layout_marginStart="@dimen/padding_margin_default"
-            android:layout_marginEnd="@dimen/padding_margin_default"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            style="@style/Base.Widget.AppCompat.Button.Colored" />
+            </android.support.design.widget.TextInputLayout>
 
-    </LinearLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_margin="@dimen/padding_margin_default"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
 
-    <TextView
-        android:id="@+id/toggle"
-        android:text="Sign Up if you're not a Donor"
-        android:textSize="@dimen/size_text_small"
-        android:layout_gravity="center_horizontal"
-        android:gravity="center"
-        android:layout_marginTop="@dimen/padding_margin_default"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Phone Number"
+                    android:inputType="phone"
+                    android:paddingBottom="8dp"
+                    android:textSize="16sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_margin="@dimen/padding_margin_default"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Date of Birth:"
+                    android:textColor="#212121"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/dob"
+                    android:layout_marginStart="@dimen/padding_margin_xs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/datePick"
+                    android:src="@drawable/ic_date_range_black_24dp"
+                    android:layout_marginStart="@dimen/padding_margin_default"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    style="@style/AppTheme.ClickableViewBorderless" />
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_margin="@dimen/padding_margin_default"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/bloodGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Blood Group"
+                    android:paddingBottom="8dp"
+                    android:textSize="16sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_margin="@dimen/padding_margin_default"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true"
+                android:layout_marginTop="16dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/passwordStore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:paddingBottom="8dp"
+                    android:textSize="16sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/buttonSignUp"
+                android:text="Sign Up"
+                android:layout_marginStart="@dimen/padding_margin_default"
+                android:layout_marginEnd="@dimen/padding_margin_default"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Base.Widget.AppCompat.Button.Colored" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/toggle"
+            android:text="Sign Up if you're not a Donor"
+            android:textSize="@dimen/size_text_small"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/padding_margin_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    <include layout="@layout/layout_profile"
+        android:visibility="gone" />
 
 </LinearLayout>

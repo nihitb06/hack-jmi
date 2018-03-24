@@ -16,4 +16,31 @@
         android:title="Donation Centres"
         android:icon="@drawable/ic_local_hospital_black_24dp" />
 
+    <item
+        android:id="@+id/appoinments"
+        android:title="Scheduled Donations"
+        android:icon="@drawable/ic_schedule_black_24dp" />
+
+    <item android:title="Options">
+        <menu>
+            <item
+                android:id="@+id/settings"
+                android:title="Settings"
+                android:icon="@drawable/ic_settings_black_24dp" />
+        </menu>
+    </item>
+
+    <item android:title="Help and Feedback">
+        <menu>
+            <item
+                android:id="@+id/help"
+                android:title="Help and FAQs"
+                android:icon="@drawable/ic_help_outline_black_24dp" />
+            <item
+                android:id="@+id/feedback"
+                android:title="Send Feedback"
+                android:icon="@drawable/ic_feedback_black_24dp" />
+        </menu>
+    </item>
+
 </menu>

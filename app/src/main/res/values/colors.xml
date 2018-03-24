@@ -8,4 +8,34 @@
     <!-- Login -->
     <color name="color_log_in">#94019c8f</color>
     <color name="color_sign_up">#93303f9f</color>
+
+    <color name="lightgray">#ededed</color>
+
+    <color name="color1">#4A7BA7</color>
+
+    <color name="color2">#04B4B3</color>
+
+    <color name="color3">#10CAC9</color>
+
+    <color name="color4">#F5A623</color>
+
+    <color name="color5">#FF7D50</color>
+
+    <color name="color6">#FC6644</color>
+
+    <color name="color7">#E75F40</color>
+
+    <color name="color8">#E13A20</color>
+
+    <color name="color9">#D93218</color>
+
+    <color name="color10">#C03823</color>
+
+    <color name="color11">#B4BAC0</color>
+
+    <color name="color12">#2B3D4D</color>
+
+    <color name="color13">#087f23</color>
+
+    <color name="color14">#283593</color>
 </resources>

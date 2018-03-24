@@ -46,4 +46,32 @@
     <dimen name="folded_label_padding">22sp</dimen>
     <dimen name="logo_size">64dp</dimen>
     <dimen name="guideline_margin">56dp</dimen>
+
+
+
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_horizontal_spacing">16dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="padding_text_about">16dp</dimen>
+    <dimen name="text_size_about">20sp</dimen>
+
+    <dimen name="text_size_login_register">14sp</dimen>
+
+    <dimen name="app_bar_height_profile_page">218dp</dimen>
+    <dimen name="padding_top_list">8dp</dimen>
+
+    <dimen name="height_list_item">48dp</dimen>
+    <dimen name="padding_img_start">16dp</dimen>
+    <dimen name="padding_text_start">72dp</dimen>
+    <dimen name="padding_end">16dp</dimen>
+    <dimen name="size_img">40dp</dimen>
+    <dimen name="size_img_large">48dp</dimen>
+    <dimen name="size_text">16sp</dimen>
+    <dimen name="size_text_header">20sp</dimen>
+
+    <dimen name="padding_margin_normal">16dp</dimen>
 </resources>

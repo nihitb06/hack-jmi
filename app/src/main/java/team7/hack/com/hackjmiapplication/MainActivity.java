@@ -5,19 +5,26 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
+import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.design.widget.NavigationView;
 import android.support.v7.widget.Toolbar;
+import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.LinearLayout;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private DrawerLayout drawerLayout;
     private Toolbar toolbar;
+    private NavigationView navBarContainer;
+
+    private String currentTag;
+
+    private static final String HOME_TAG = "Home";
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -29,13 +36,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         setToolbar();
         setNavigation();
+
+        changeFragments(new HomeFragment(), HOME_TAG);
     }
 
     private void setToolbar() {
         setSupportActionBar(toolbar);
     }
     private void setNavigation() {
-        final LinearLayout contentView = findViewById(R.id.contentView);
+        final View contentView = findViewById(R.id.contentView);
 
         ActionBarDrawerToggle actionBarDrawerToggle = new ActionBarDrawerToggle(
                 this, drawerLayout,
@@ -60,16 +69,41 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         actionBarDrawerToggle.syncState();
 
-        ((NavigationView) findViewById(R.id.navBarContainer)).setNavigationItemSelectedListener(this);
+        navBarContainer = findViewById(R.id.navBarContainer);
+        navBarContainer.setNavigationItemSelectedListener(this);
+    }
+
+    @Override
+    public void onBackPressed() {
+        if(drawerLayout.isDrawerOpen(GravityCompat.START))
+            drawerLayout.closeDrawer(GravityCompat.START);
+        else
+            super.onBackPressed();
     }
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
+            case R.id.home:
+                if(!currentTag.equals(HOME_TAG)) {
+                    changeFragments(new HomeFragment(), HOME_TAG);
+                    return true;
+                }
+                break;
+
             case R.id.profile:
                 startActivity(new Intent(MainActivity.this, LoginActivity.class));
                 return true;
+
+            case R.id.donationCentres:
+                startActivity(new Intent(MainActivity.this, MapsActivity.class));
+                return true;
         }
         return false;
+    }
+
+    private void changeFragments(Fragment fragment, String tag) {
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragContainer, fragment,  tag).commit();
+        currentTag = tag;
     }
 }
